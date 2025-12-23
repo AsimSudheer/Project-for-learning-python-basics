@@ -13,3 +13,17 @@ apple - 5.20 kcal
 egg - 69.75 kcal
 Total calories is 74.95 kcal
 
+-----Next Day-----
+apple - 2.08 kcal
+egg - 46.50 kcal
+Total calories is 48.58 kcal
+
+
+
+------25 - 12 - 23 18:38------
+
+-----Next Day-----
+apple - 2.08 kcal
+egg - 6.20 kcal
+Total calories is 8.28 kcal
+

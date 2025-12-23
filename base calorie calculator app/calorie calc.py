@@ -1,3 +1,4 @@
+from datetime import datetime
 food_loq =[]
 
 food_calories = {
@@ -9,7 +10,10 @@ food_calories = {
 }
 
 def save_to_file():
+    now = datetime.now()
+    time = now.strftime("%y - %m - %d %H:%M" )
     with open("food info.txt","a") as file:
+        file.write(f"------{time}------\n\n")
         file.write("-----Next Day-----\n")
         for item in food_loq:
             file.write(item+"\n")

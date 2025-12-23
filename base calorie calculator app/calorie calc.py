@@ -1,3 +1,5 @@
+food_loq =[]
+
 food_calories = {
     "rice": 130,
     "egg": 155,
@@ -6,7 +8,12 @@ food_calories = {
     "bread": 265
 }
 
-
+def save_to_file():
+    with open("food info.txt","a") as file:
+        file.write("-----Next Day-----\n")
+        for item in food_loq:
+            file.write(item+"\n")
+        file.write(f"Total calories is {sum(calories):.2f} kcal\n\n")
 calories = []
 
 def add_food(food_name,grams):
@@ -37,9 +44,12 @@ while True:
             continue
         calorie = add_food(food_name,grams)
         calories.append(calorie)
+        food_loq.append(f"{food} - {calorie:.2f} kcal")
         print("The food has been added")
     elif choice == 2:
         print("----TOTAL----")
         total_food()
     elif choice == 3:
+        save_to_file()
+        print("The details has been added to the file")
         break   
